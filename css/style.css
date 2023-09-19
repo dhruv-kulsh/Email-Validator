@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: azure;
+    padding: 20px 12px;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+ul li a {
+    color: azure;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(177, 176, 176);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+main {
+    background-color: aquamarine;
+    min-height: 85vh;
+    padding: 5px;
+}
+
+.container {
+    /* background-color: rgb(78, 255, 255); */
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.container h1 {
+    padding: 5px 0px;
+}
+
+.logo img {
+    width: 22px;
+    filter: invert(1);
+    margin-right: 5px;
+}
+
+.logo span {
+    color: white;
+    font-size: 20px;
+}
+
+#username {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn {
+    width: 60px;
+    border: 2px solid black;
+    background-color: rgb(20, 14, 8);
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+#resultcont div::first-letter {
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+
+    .container {
+        font-size: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul li {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 15px;
+    }
+}
